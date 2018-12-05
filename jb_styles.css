@@ -14,3 +14,66 @@
    Jersey Buoys home page
 
 */
+/* html styles */
+/* html {
+    background: url("jb_back3.png");
+    background-attachment: fixed;
+    background-size: 100%;
+
+} */
+
+/* nav styles */
+nav#horizontal {
+    min-height: 2em;
+}
+
+nav#horizontal li {
+    display: block
+}
+
+nav#horizontal a {
+    display: block;
+}
+
+ul.mainmenu {
+    display: block;
+}
+
+ul.submenu {
+    width: 100%;
+}
+
+ul.submenu {
+    display: none;
+}
+
+a.subtitle:hover+ul.submenu,
+ul.submenu:hover {
+    display: block;
+}
+
+
+
+ul.mainmenu>li {
+    float: left;
+    width: 16.65%;
+    position: relative;
+}
+
+ul.submenu {
+    width: 200%;
+    box-shadow: rgb(51, 51, 51) 5px 5px 15px;
+    position: absolute;
+}
+
+ul.mainmenuli a {
+    margin: 0px auto;
+}
+
+
+/* mobile styles [0px-480px] */
+@media only screen and (max-width: 480px) {
+    aside {
+        display: none;
+    }
+}
