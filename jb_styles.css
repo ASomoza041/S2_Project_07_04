@@ -15,12 +15,59 @@
 
 */
 /* html styles */
-/* html {
-    background: url("jb_back3.png");
-    background-attachment: fixed;
-    background-size: 100%;
+html {
+    background-image: url("jb_back3.png");
+    background-size: cover;
+}
 
-} */
+/* body styles */
+
+
+body {
+    background-color: hsla(178, 87%, 62%, .69);
+    width: 90%;
+    margin: 0px auto;
+
+
+}
+
+body:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+
+article {
+    background-color: rgba(3, 176, 215, 0.8);
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+article p {
+    display: -webkit-flex;
+    display: flex;
+    margin: 20px 5px;
+
+
+}
+
+aside {
+    background-color: rgba(15, 194, 234, 0.8);
+    margin: 5px 10px;
+    display: inline-block;
+    width: 47%;
+}
+
+dt,
+dl,
+dd,
+h3 {
+    margin-left: 7px;
+}
+
 
 /* nav styles */
 nav#horizontal {
@@ -32,19 +79,30 @@ nav#horizontal li {
 }
 
 nav#horizontal a {
+    color: whitesmoke;
     display: block;
+}
+
+nav#horizontal ul.mainmenu>li>a {
+    display: inline;
+    color: whitesmoke;
+
 }
 
 ul.mainmenu {
+    padding: 0px;
     display: block;
+    width: 100%;
+
 }
 
-ul.submenu {
-    width: 100%;
-}
 
 ul.submenu {
     display: none;
+    background-color: rgba(3, 176, 215, 0.8);
+    width: 200%;
+    box-shadow: rgb(51, 51, 51) 5px 5px 15px;
+    position: absolute;
 }
 
 a.subtitle:hover+ul.submenu,
@@ -55,25 +113,38 @@ ul.submenu:hover {
 
 
 ul.mainmenu>li {
+
+    background-color: rgba(2, 140, 171, 0.8);
+
     float: left;
     width: 16.65%;
     position: relative;
 }
 
-ul.submenu {
-    width: 200%;
-    box-shadow: rgb(51, 51, 51) 5px 5px 15px;
-    position: absolute;
+ul.submenu>li {
+    line-height: 30px;
 }
 
-ul.mainmenuli a {
-    margin: 0px auto;
+ul.submenu>li>a {
+    text-shadow: black 5px 5px 3px;
 }
+
+/* br styles */
 
 
 /* mobile styles [0px-480px] */
 @media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
     aside {
         display: none;
+    }
+
+    article {
+        width: 89%;
+        margin: 5px 10px;
     }
 }
